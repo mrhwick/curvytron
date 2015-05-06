@@ -5,7 +5,7 @@ try {
     config = require('../config.json');
 } catch (error) {
     config = {
-        port: 8080,
+        port: process.env.PORT,
         inspector: { enabled: false }
     };
 }
